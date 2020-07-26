@@ -2,7 +2,14 @@
   "env": {
     "react-native/react-native": true
   },
-  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  // "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -11,6 +18,8 @@
   },
   "plugins": ["react", "react-native"],
   "rules": {
+    "no-console": 1,
+    "@typescript-eslint/no-explicit-any": 0,
     "react-native/no-unused-styles": 2,
     "react-native/split-platform-components": 2,
     "react-native/no-inline-styles": 2,

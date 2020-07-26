@@ -8,7 +8,8 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "strict": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    "target": "ES5"
     // "exclude": ["node_modules"],
     // "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
   }
