@@ -1,8 +1,8 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import React from "react";
-import HomeScreen from "./pages/Home";
-import LoginForm from "./pages/LoginForm";
+import LoginScreen from "./pages/Login";
+import MainScreen from "./pages/LoginForm";
 
 const Stack = createStackNavigator();
 
@@ -10,8 +10,8 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login">
-        <Stack.Screen name="Login" component={HomeScreen} />
-        <Stack.Screen name="Home" component={LoginForm} />
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Main" component={MainScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
